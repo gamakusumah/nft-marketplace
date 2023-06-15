@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Inter, Space_Mono, Work_Sans } from "next/font/google";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${space_mono.variable} ${work_sans.variable}`}>
+        <Navbar />
         {children}
       </body>
     </html>
