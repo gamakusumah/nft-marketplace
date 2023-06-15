@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply bg-prim text-white font-sans;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .btn-primary-fill {
+    @apply h-[72px] font-sans font-semibold text-lg rounded-[20px] bg-cta;
+  }
+  .btn-primary-outline {
+    @apply h-[72px] font-sans font-semibold text-lg rounded-[20px] border-2 box-border border-cta;
+  }
+  .btn-secondary-fill {
+    @apply h-[60px] font-sans font-semibold rounded-[20px] bg-cta;
+  }
+  .btn-secondary-outline {
+    @apply h-[60px] font-sans font-semibold rounded-[20px] border-2 box-border border-cta;
+  }
+  .btn-tertiary-fill {
+    @apply h-[46px] font-sans font-semibold rounded-[20px] bg-cta;
+  }
+  .btn-tertiary-outline {
+    @apply h-[46px] font-sans font-semibold rounded-[20px] border-2 box-border border-cta;
+  }
+}
+
+@layer utilities {
+  .gradient-1 {
+    background: rgb(162, 89, 255);
+    background: linear-gradient(
+      152deg,
+      rgba(162, 89, 255, 1) 10%,
+      rgba(255, 98, 80, 1) 100%
+    );
+  }
+
+  .gradient-2 {
+    background: rgb(162, 89, 255);
+    background: linear-gradient(
+      152deg,
+      rgba(162, 89, 255, 1) 39%,
+      rgba(55, 125, 247, 1) 100%
+    );
+  }
 }
