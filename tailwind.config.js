@@ -12,8 +12,16 @@ module.exports = {
       "2xl": ["38px", "120%"],
       xl: ["28px", "140%"],
       lg: ["22px", "140%"],
+      md: ["22px", "160%"],
       base: ["16px", "140%"],
       sm: ["12px", "110%"],
+    },
+    screens: {
+      md: "834px",
+      // => @media (min-width: 834px) { ... }
+
+      lg: "1280px",
+      // => @media (min-width: 1280px) { ... }
     },
     extend: {
       fontFamily: {
@@ -30,5 +38,29 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  corePlugins: {
+    container: false,
+  },
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".container": {
+          minWidth: "315px",
+          maxWidth: "315px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          "@screen md": {
+            maxWidth: "690px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          },
+          "@screen lg": {
+            maxWidth: "1050px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          },
+        },
+      });
+    },
+  ],
 };

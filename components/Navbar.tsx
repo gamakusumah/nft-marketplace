@@ -28,26 +28,20 @@ export default function Navbar() {
 
       {/* Menu List */}
       <ul className="lg:flex items-center justify-between space-x-2 hidden">
-        <li className="px-5 py-3">
-          <Link href="/marketplace" className="font-sans font-semibold">
-            Marketplace
-          </Link>
-        </li>
-        <li className="px-5 py-3">
-          <Link href="/rankings" className="font-sans font-semibold">
-            Rankings
-          </Link>
-        </li>
-        <li className="px-5 py-3">
-          <Link href="/wallet" className="font-sans font-semibold">
-            Connect a wallet
-          </Link>
-        </li>
-        <li className="btn-secondary-fill w-[152px] flex items-center justify-center">
-          <Link
-            href="/signup"
-            className="font-sans font-semibold flex items-center justify-center"
-          >
+        <Link href="/marketplace" className="font-sans font-semibold">
+          <li className="px-5 py-3 hover:bg-sec">Marketplace</li>
+        </Link>
+        <Link href="/rankings" className="font-sans font-semibold">
+          <li className="px-5 py-3 hover:bg-sec">Rankings</li>
+        </Link>
+        <Link href="/wallet" className="font-sans font-semibold">
+          <li className="px-5 py-3 hover:bg-sec">Connect a wallet</li>
+        </Link>
+        <Link
+          href="/signup"
+          className="font-sans font-semibold flex items-center justify-center"
+        >
+          <li className="btn-secondary-fill w-[152px] flex items-center justify-center">
             <Image
               src={User}
               width={20}
@@ -56,8 +50,8 @@ export default function Navbar() {
               alt="User"
             />
             Signup
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
     </nav>
   );

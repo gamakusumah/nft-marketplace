@@ -10,13 +10,13 @@
 
 @layer components {
   .btn-primary-fill {
-    @apply h-[72px] font-sans font-semibold text-lg rounded-[20px] bg-cta;
+    @apply h-[72px] font-sans font-semibold text-lg rounded-[20px] bg-cta hover:bg-cta/25;
   }
   .btn-primary-outline {
     @apply h-[72px] font-sans font-semibold text-lg rounded-[20px] border-2 box-border border-cta;
   }
   .btn-secondary-fill {
-    @apply h-[60px] font-sans font-semibold rounded-[20px] bg-cta flex items-center justify-center;
+    @apply h-[60px] font-sans font-semibold rounded-[20px] bg-cta flex items-center justify-center hover:bg-cta/75;
   }
   .btn-secondary-outline {
     @apply h-[60px] font-sans font-semibold rounded-[20px] border-2 box-border border-cta;
