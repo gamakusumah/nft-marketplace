@@ -17,7 +17,7 @@ export default function HighlightedNFT() {
         </h5>
         <div className="flex items-center">
           <div className="h-6 w-6 bg-slate-500 rounded-full mr-3"></div>
-          Animakid
+          <span>Animakid</span>
         </div>
       </div>
     </div>

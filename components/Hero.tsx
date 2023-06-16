@@ -2,7 +2,7 @@ import HighlightedNFT from "./HighlightedNFT";
 
 export default function Hero() {
   return (
-    <section className="py-10 md:py-20 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-[30px] lg:gap-x-[60px] container">
+    <section className="py-10 md:py-20 md:grid md:grid-cols-2 md:gap-x-[30px] lg:gap-x-[60px] container">
       <div className="justify-self-start">
         {/* Headline and Description */}
         <div>
@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
 
       {/* Hero's Image */}
-      <div className="justify-self-end md:row-span-2">
+      <div className="md:row-span-2">
         <HighlightedNFT />
       </div>
 
