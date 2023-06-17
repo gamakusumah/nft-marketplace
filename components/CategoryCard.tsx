@@ -27,9 +27,9 @@ export default function CategoryCard(prop: CategoryProp) {
           />
         </div>
       </div>
-      <div className="pt-5 pb-[25px] bg-sec px-5 lg:px-[30px] font-sans font-semibold lg:text-lg items-stretch">
-        <span>{prop.name}</span>
-      </div>
+      <h5 className="pt-5 pb-[25px] bg-sec px-5 lg:px-[30px] font-sans font-semibold lg:text-lg items-stretch">
+        {prop.name}
+      </h5>
     </div>
   );
 }
