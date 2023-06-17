@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CollectionCard() {
   return (
-    <div className="h-[505px] md:h-[525px] w-full my-10 flex flex-col justify-between">
+    <div className="h-[505px] md:h-[525px] w-full flex flex-col justify-between">
       {/* Photos */}
       <div className="h-[425px] w-full grid gap-[15px]">
         <div className="h-[315px] md:h-[330px] w-full bg-orange-500 rounded-[20px]"></div>
