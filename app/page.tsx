@@ -1,6 +1,7 @@
 import BrowseCategories from "@/components/BrowseCategories";
 import DiscoverMoreNFTs from "@/components/DiscoverMoreNFTs";
 import Hero from "@/components/Hero";
+import HowItWorks from "@/components/HowItWorks";
 import NFTHighlight from "@/components/NFTHighlight";
 import TopRatedArtist from "@/components/TopRatedArtist";
 import TrendingCollection from "@/components/TrendingCollection";
@@ -14,6 +15,7 @@ export default function Home() {
       <BrowseCategories />
       <DiscoverMoreNFTs />
       <NFTHighlight />
+      <HowItWorks />
     </main>
   );
 }

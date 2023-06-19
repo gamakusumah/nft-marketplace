@@ -5,9 +5,9 @@ export default function DiscoverMoreNFTs() {
     <section className="container py-10 md:pb-20 lg:mt-20 grid md:grid-cols-2">
       {/* Headline */}
       <div>
-        <h1 className="font-sans font-semibold text-xl lg:text-2xl mb-[10px]">
+        <h2 className="font-sans font-semibold text-xl lg:text-2xl mb-[10px]">
           Discover more NFTs
-        </h1>
+        </h2>
         <p className="font-sans lg:text-md">Explore new trending NFTs</p>
       </div>
 
