@@ -82,7 +82,7 @@ export default function TopRatedArtist() {
       </div>
 
       {/* Artist Cards Row */}
-      <div className="h-[580px] overflow-hidden md:h-[360px] lg:h-[774px] w-full my-10 md:my-[60px] grid gap-5 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 md:gap-[30px] md:col-span-2 md:order-3">
+      <div className="h-[580px] overflow-hidden md:h-[360px] lg:h-[774px] w-full my-10 md:mt-[60px] md:mb-0 grid gap-5 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 md:gap-[30px] md:col-span-2 md:order-3">
         {artists.map((artist, i) => (
           <ArtistCard
             index={i + 1}

@@ -9,7 +9,7 @@ interface CardProp {
 export default function ArtistCard(prop: CardProp) {
   return (
     <div className="w-full h-[100px] lg:h-[238px] rounded-[20px] bg-sec flex items-center justify-center lg:relative lg:flex-col">
-      <div className="w-[60px] h-[60px] lg:w-[120px] lg:h-[120px] rounded-full bg-orange-400 mr-5 lg:mb-5 lg:mr-0">
+      <div className="w-[60px] h-[60px] lg:w-[120px] lg:h-[120px] rounded-full mr-5 lg:mb-5 lg:mr-0">
         <Image
           src={prop.imgSrc}
           width={120}

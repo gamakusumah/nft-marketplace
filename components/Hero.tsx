@@ -25,7 +25,7 @@ export default function Hero() {
       <div>
         {/* CTA Button */}
         <button className="btn-secondary-fill w-full md:w-[224px] my-10 md:my-5 lg:my-[30px]">
-          <div className="h-5 w-5 bg-white mr-3"></div>
+          <span className="h-5 w-5 bg-white mr-3"></span>
           Get Started
         </button>
 

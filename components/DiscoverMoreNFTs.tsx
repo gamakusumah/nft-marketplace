@@ -2,7 +2,7 @@ import NFTCard from "./NFTCard";
 
 export default function DiscoverMoreNFTs() {
   return (
-    <section className="container py-10 lg:py-20 grid md:grid-cols-2">
+    <section className="container py-10 md:pb-20 lg:mt-20 grid md:grid-cols-2">
       {/* Headline */}
       <div>
         <h1 className="font-sans font-semibold text-xl lg:text-2xl mb-[10px]">
@@ -12,7 +12,7 @@ export default function DiscoverMoreNFTs() {
       </div>
 
       {/*NFTs Cards */}
-      <div className="h-[1246px] md:h-[469px] overflow-hidden my-10 md:order-3 md:col-span-2 grid gap-5 md:grid-cols-2 lg:grid-cols-3 md:gap-[30px]">
+      <div className="h-[1246px] md:h-[469px] overflow-hidden my-10 md:mb-0 md:order-3 md:col-span-2 grid gap-5 md:grid-cols-2 lg:grid-cols-3 md:gap-[30px]">
         <NFTCard
           name="NFT Name"
           artist="NFT Artist"
@@ -38,7 +38,7 @@ export default function DiscoverMoreNFTs() {
 
       {/* Button */}
       <button className="btn-secondary-outline w-full md:w-[247px] md:place-self-end">
-        <div className="h-5 w-5 bg-cta mr-3"></div>
+        <span className="h-5 w-5 bg-cta mr-3"></span>
         See All
       </button>
     </section>

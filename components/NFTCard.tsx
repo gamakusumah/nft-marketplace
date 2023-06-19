@@ -17,7 +17,7 @@ export default function NFTCard(proto: NFTProto) {
           width={330}
           height={296}
           alt="NFT Card Image"
-          className="object-fit h-full w-full"
+          className="object-cover h-full w-full"
         />
       </div>
       <div className="h-[164px] w-full px-5 pt-5 pb-[25px] md:px-[30px]">
@@ -26,7 +26,7 @@ export default function NFTCard(proto: NFTProto) {
             {proto.name}
           </h5>
           <p className="font-mono flex">
-            <div className="w-6 h-6 rounded-full bg-orange-400 mr-3"></div>
+            <span className="w-6 h-6 rounded-full bg-orange-400 mr-3"></span>
             {proto.artist}
           </p>
         </div>
