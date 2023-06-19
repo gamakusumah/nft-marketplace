@@ -6,8 +6,8 @@ export default function NFTHighlight() {
   return (
     <section className="w-full h-[590px] md:h-[630px] bg-[url('/images/NFT-Highlight.jpg')] bg-cover bg-center relative">
       <div className="w-full h-full bg-gradient-to-t from-cta"></div>
-      <div className="h-full w-full absolute top-0 pt-[120px] md:pt-[360px] md:pb-[60px] px-[30px] md:px-[82px] pb-10">
-        <div className="w-full h-full flex flex-col justify-between md:grid md:grid-cols-2 md:gap-y-[30px]">
+      <div className="h-full w-full absolute top-0 pt-[120px] md:pt-[360px] md:pb-[60px] px-[30px] md:px-[82px] lg:px-[195px] pb-10">
+        <div className="h-full flex flex-col justify-between md:grid md:grid-cols-2 md:gap-y-[30px]">
           {/* Artist */}
           <div className="w-[151px] h-11 bg-sec flex items-center justify-center rounded-[20px] md:order-1">
             <Image
