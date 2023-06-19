@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Inter, Space_Mono, Work_Sans } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const space_mono = Space_Mono({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${space_mono.variable} ${work_sans.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
