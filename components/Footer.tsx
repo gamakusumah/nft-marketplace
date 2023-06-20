@@ -17,7 +17,7 @@ export default function Footer() {
                 alt="logo"
                 className="text-cta w-6 h-6 lg:w-8 lg:h-8"
               />
-              <p className="font-mono font-bold">NFT Marketplace</p>
+              <p className="font-mono font-bold lg:text-lg">NFT Marketplace</p>
             </Link>
 
             {/* Additional Info */}

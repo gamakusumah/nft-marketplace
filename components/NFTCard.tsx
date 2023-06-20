@@ -6,11 +6,14 @@ interface NFTProto {
   price: number;
   highestBid: number;
   imgSrc: string;
+  bgColor: string;
 }
 
 export default function NFTCard(proto: NFTProto) {
   return (
-    <div className="h-[402px] md:h-[469px] w-full max-w-[330px] bg-sec rounded-[20px] overflow-hidden">
+    <div
+      className={`h-[402px] md:h-[469px] w-full max-w-[330px] rounded-[20px] overflow-hidden bg-${proto.bgColor}`}
+    >
       <div className="h-[238px] md:h-[296px] w-full">
         <Image
           src={proto.imgSrc}

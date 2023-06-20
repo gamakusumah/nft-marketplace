@@ -19,6 +19,7 @@ export default function DiscoverMoreNFTs() {
           price={1.63}
           highestBid={0.33}
           imgSrc="/images/nft/1.jpg"
+          bgColor="sec"
         />
         <NFTCard
           name="NFT Name"
@@ -26,6 +27,7 @@ export default function DiscoverMoreNFTs() {
           price={1.63}
           highestBid={0.33}
           imgSrc="/images/nft/2.jpg"
+          bgColor="sec"
         />
         <NFTCard
           name="NFT Name"
@@ -33,6 +35,7 @@ export default function DiscoverMoreNFTs() {
           price={1.63}
           highestBid={0.33}
           imgSrc="/images/nft/3.jpg"
+          bgColor="sec"
         />
       </div>
 

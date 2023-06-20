@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function page() {
+export default function Signup() {
   return (
     <main className="grid md:grid-cols-2 md:gap-10 md:items-center lg:gap-[60px]">
       <section className="h-[232px] md:h-[615px] lg:h-[651px]">
