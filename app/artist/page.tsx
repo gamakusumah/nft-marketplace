@@ -1,7 +1,7 @@
 import Cover from "./components/Cover";
 import ArtistInfo from "./components/ArtistInfo";
 import NFTCards from "@/components/NFTCards";
-import TabBar from "@/components/TabBar";
+import TabBar from "./components/TabBar";
 
 export default function Artist() {
   return (
