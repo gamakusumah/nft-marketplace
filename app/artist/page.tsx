@@ -10,7 +10,7 @@ export default function Artist() {
       <ArtistInfo />
       <TabBar />
       <section className="py-20 bg-sec border-b-2 border-prim ">
-        <NFTCards />
+        <NFTCards bgColorCard="prim" />
       </section>
     </main>
   );

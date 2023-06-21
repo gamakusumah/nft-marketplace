@@ -1,6 +1,9 @@
 import NFTCard from "./NFTCard";
+interface CardProp {
+  bgColorCard: string;
+}
 
-export default function NFTCards() {
+export default function NFTCards(prop: CardProp) {
   return (
     <div className="container h-[1266px] overflow-hidden md:h-[1467px] grid gap-[30px] md:grid-cols-2 lg:grid-cols-3">
       <NFTCard
@@ -9,7 +12,7 @@ export default function NFTCards() {
         price={1.63}
         highestBid={0.33}
         imgSrc="/images/nft/1.jpg"
-        bgColor="prim"
+        bgColor={prop.bgColorCard}
       />
       <NFTCard
         name="NFT Name"
@@ -17,7 +20,7 @@ export default function NFTCards() {
         price={1.63}
         highestBid={0.33}
         imgSrc="/images/nft/2.jpg"
-        bgColor="prim"
+        bgColor={prop.bgColorCard}
       />
       <NFTCard
         name="NFT Name"
@@ -25,7 +28,7 @@ export default function NFTCards() {
         price={1.63}
         highestBid={0.33}
         imgSrc="/images/nft/3.jpg"
-        bgColor="prim"
+        bgColor={prop.bgColorCard}
       />
       <NFTCard
         name="NFT Name"
@@ -33,7 +36,7 @@ export default function NFTCards() {
         price={1.63}
         highestBid={0.33}
         imgSrc="/images/nft/4.jpg"
-        bgColor="prim"
+        bgColor={prop.bgColorCard}
       />
       <NFTCard
         name="NFT Name"
@@ -41,7 +44,7 @@ export default function NFTCards() {
         price={1.63}
         highestBid={0.33}
         imgSrc="/images/nft/1.jpg"
-        bgColor="prim"
+        bgColor={prop.bgColorCard}
       />
       <NFTCard
         name="NFT Name"
@@ -49,7 +52,7 @@ export default function NFTCards() {
         price={1.63}
         highestBid={0.33}
         imgSrc="/images/nft/2.jpg"
-        bgColor="prim"
+        bgColor={prop.bgColorCard}
       />
       <NFTCard
         name="NFT Name"
@@ -57,7 +60,7 @@ export default function NFTCards() {
         price={1.63}
         highestBid={0.33}
         imgSrc="/images/nft/3.jpg"
-        bgColor="prim"
+        bgColor={prop.bgColorCard}
       />
       <NFTCard
         name="NFT Name"
@@ -65,7 +68,7 @@ export default function NFTCards() {
         price={1.63}
         highestBid={0.33}
         imgSrc="/images/nft/4.jpg"
-        bgColor="prim"
+        bgColor={prop.bgColorCard}
       />
       <NFTCard
         name="NFT Name"
@@ -73,7 +76,7 @@ export default function NFTCards() {
         price={1.63}
         highestBid={0.33}
         imgSrc="/images/nft/1.jpg"
-        bgColor="prim"
+        bgColor={prop.bgColorCard}
       />
     </div>
   );
