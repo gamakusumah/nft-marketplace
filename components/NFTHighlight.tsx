@@ -23,7 +23,7 @@ export default function NFTHighlight() {
             Magic Mushrooms
           </h3>
           <div className="md:order-2 md:row-span-3 md:self-end md:place-self-end">
-            <AuctionTimer />
+            <AuctionTimer btnHidden={true} />
           </div>
           <Link
             href="/"

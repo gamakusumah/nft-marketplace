@@ -1,6 +1,10 @@
-export default function AuctionTimer() {
+interface AuctionProp {
+  btnHidden: boolean;
+}
+
+export default function AuctionTimer(prop: AuctionProp) {
   return (
-    <div className="w-[295px] h-[144px] p-[30px] bg-sec bg-opacity-50 rounded-[20px] flex flex-col justify-between">
+    <div className="w-[295px] min-h-[144px] p-[30px] bg-sec bg-opacity-50 rounded-[20px] flex flex-col justify-between">
       <p className="font-mono text-sm">Auction ends in:</p>
       <div className="flex justify-between">
         <div>
@@ -18,6 +22,14 @@ export default function AuctionTimer() {
           <p className="font-mono text-sm">Seconds</p>
         </div>
       </div>
+
+      <button
+        className={`btn-secondary-fill w-full mt-[30px] ${
+          prop.btnHidden ? "hidden" : null
+        }`}
+      >
+        Place Bid
+      </button>
     </div>
   );
 }

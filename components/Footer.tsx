@@ -97,7 +97,7 @@ export default function Footer() {
                   className="w-full text-prim focus:outline-none md:w-[47%] "
                 />
               </div>
-              <button className="btn-secondary-fill w-full md:absolute md:w-[211px] md:right-0">
+              <button className="btn-tertiary-fill md:btn-secondary-fill w-full md:absolute md:w-[211px] md:right-0">
                 <Image
                   src="/icons/EnvelopeSimple.svg"
                   width={20}
