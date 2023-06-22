@@ -15,9 +15,9 @@ export default function SubscribeWidget() {
         </div>
         <div className="self-center">
           <div className="mb-10 mt-[30px] md:mt-0">
-            <h4 className="font-sans font-semibold text-xl mb-[10px] lg:text-2xl">
+            <h2 className="font-sans font-semibold text-xl mb-[10px] lg:text-2xl">
               Join Our Weekly Digest
-            </h4>
+            </h2>
             <p className="lg:text-md">
               Get exclusive promotions & updates straight to your inbox.
             </p>

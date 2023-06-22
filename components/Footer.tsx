@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Storefront from "@/public/images/Logo.png";
 
 export default function Footer() {
   return (
@@ -9,19 +10,12 @@ export default function Footer() {
           {/* Info */}
           <div>
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2 mb-5">
-              <Image
-                src="/icons/Storefront.svg"
-                width={24}
-                height={24}
-                alt="logo"
-                className="text-cta w-6 h-6 lg:w-8 lg:h-8"
-              />
-              <p className="font-mono font-bold lg:text-lg">NFT Marketplace</p>
+            <Link href="/">
+              <Image src={Storefront} alt="NFT Marketplace Logo" />
             </Link>
 
             {/* Additional Info */}
-            <div className="text-caption">
+            <div className="text-caption mt-5">
               <p className="mb-5 lg:w-[238px]">
                 NFT marketplace UI created with Anima for Figma.
               </p>
@@ -69,11 +63,17 @@ export default function Footer() {
           <div>
             <h5 className="font-mono font-bold text-lg mb-5">Explore</h5>
             <ul className="grid gap-5 text-caption">
-              <li className="cursor-pointer hover:text-white">Markteplace</li>
-              <li className="cursor-pointer hover:text-white">Rankings</li>
-              <li className="cursor-pointer hover:text-white">
-                Connect a wallet
-              </li>
+              <Link href="/marketplace">
+                <li className="cursor-pointer hover:text-white">Markteplace</li>
+              </Link>
+              <Link href="/rankings">
+                <li className="cursor-pointer hover:text-white">Rankings</li>
+              </Link>
+              <Link href="/connect-wallet">
+                <li className="cursor-pointer hover:text-white">
+                  Connect a wallet
+                </li>
+              </Link>
             </ul>
           </div>
 

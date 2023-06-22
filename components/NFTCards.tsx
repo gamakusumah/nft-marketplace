@@ -13,6 +13,7 @@ export default function NFTCards(prop: CardProp) {
         highestBid={0.33}
         imgSrc="/images/nft/1.jpg"
         bgColor={prop.bgColorCard}
+        avatarArtist="/images/avatar/avatar-1.jpg"
       />
       <NFTCard
         name="NFT Name"
@@ -21,6 +22,7 @@ export default function NFTCards(prop: CardProp) {
         highestBid={0.33}
         imgSrc="/images/nft/2.jpg"
         bgColor={prop.bgColorCard}
+        avatarArtist="/images/avatar/avatar-2.jpg"
       />
       <NFTCard
         name="NFT Name"
@@ -29,6 +31,7 @@ export default function NFTCards(prop: CardProp) {
         highestBid={0.33}
         imgSrc="/images/nft/3.jpg"
         bgColor={prop.bgColorCard}
+        avatarArtist="/images/avatar/avatar-3.jpg"
       />
       <NFTCard
         name="NFT Name"
@@ -37,6 +40,7 @@ export default function NFTCards(prop: CardProp) {
         highestBid={0.33}
         imgSrc="/images/nft/4.jpg"
         bgColor={prop.bgColorCard}
+        avatarArtist="/images/avatar/avatar-4.jpg"
       />
       <NFTCard
         name="NFT Name"
@@ -45,6 +49,7 @@ export default function NFTCards(prop: CardProp) {
         highestBid={0.33}
         imgSrc="/images/nft/1.jpg"
         bgColor={prop.bgColorCard}
+        avatarArtist="/images/avatar/avatar-5.jpg"
       />
       <NFTCard
         name="NFT Name"
@@ -53,6 +58,7 @@ export default function NFTCards(prop: CardProp) {
         highestBid={0.33}
         imgSrc="/images/nft/2.jpg"
         bgColor={prop.bgColorCard}
+        avatarArtist="/images/avatar/avatar-6.jpg"
       />
       <NFTCard
         name="NFT Name"
@@ -61,6 +67,7 @@ export default function NFTCards(prop: CardProp) {
         highestBid={0.33}
         imgSrc="/images/nft/3.jpg"
         bgColor={prop.bgColorCard}
+        avatarArtist="/images/avatar/avatar-7.jpg"
       />
       <NFTCard
         name="NFT Name"
@@ -69,6 +76,7 @@ export default function NFTCards(prop: CardProp) {
         highestBid={0.33}
         imgSrc="/images/nft/4.jpg"
         bgColor={prop.bgColorCard}
+        avatarArtist="/images/avatar/avatar-8.jpg"
       />
       <NFTCard
         name="NFT Name"
@@ -77,6 +85,7 @@ export default function NFTCards(prop: CardProp) {
         highestBid={0.33}
         imgSrc="/images/nft/1.jpg"
         bgColor={prop.bgColorCard}
+        avatarArtist="/images/avatar/avatar-9.jpg"
       />
     </div>
   );

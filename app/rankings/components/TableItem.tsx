@@ -1,22 +1,28 @@
 import Image from "next/image";
 
-export default function TableItem() {
+interface ItemProp {
+  index: number;
+  artistName: string;
+  avatarImgSrc: string;
+}
+
+export default function TableItem(prop: ItemProp) {
   return (
     <div className="w-full h-[50px] md:h-[60px] lg:h-[84px] px-[10px] md:px-5 flex items-center justify-between bg-sec rounded-[20px]">
       <div className="flex items-center">
-        <span className="font-mono text-caption text-sm mr-[10px] md:text-base md:mr-5 lg:w-[30px] lg:h-[30px] lg:rounded-[20px] lg:bg-prim lg:flex lg:items-center lg:justify-center">
-          1
+        <span className="font-mono text-caption text-sm mr-[10px] md:text-base md:mr-5 w-[30px] h-[30px] lg:rounded-[20px] lg:bg-prim flex items-center justify-center">
+          {prop.index}
         </span>
         <div className="flex items-center">
           <Image
-            src="/images/avatar/avatar-1.svg"
+            src={prop.avatarImgSrc}
             width={24}
             height={24}
             alt="Artist Photo"
-            className="lg:w-[60px] lg:h-[60px]"
+            className="lg:w-[60px] lg:h-[60px] rounded-full"
           />
           <h5 className="ml-3 lg:ml-5 md:text-lg md:font-semibold lg:font-semibold">
-            Dish Studio
+            {prop.artistName}
           </h5>
         </div>
       </div>

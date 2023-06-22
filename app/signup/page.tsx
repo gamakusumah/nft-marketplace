@@ -27,11 +27,11 @@ export default function Signup() {
             {/* Username Input Text */}
             <div className="w-full h-[46px] px-5 rounded-[20px] flex items-center bg-white">
               <Image
-                src="/icons/User.svg"
+                src="/icons/UserGray.svg"
                 width={20}
                 height={20}
                 alt="Username Icon"
-                className="mr-3 bg-caption"
+                className="mr-3"
               />
               <input
                 type="text"
@@ -42,11 +42,11 @@ export default function Signup() {
             {/* Email Input Text */}
             <div className="w-full h-[46px] px-5 rounded-[20px] flex items-center bg-white">
               <Image
-                src="/icons/EnvelopeSimple.svg"
+                src="/icons/EnvelopeSimpleGray.svg"
                 width={20}
                 height={20}
                 alt="Email Icon"
-                className="mr-3 bg-caption"
+                className="mr-3"
               />
               <input
                 type="email"
@@ -57,11 +57,11 @@ export default function Signup() {
             {/* Password Input Text */}
             <div className="w-full h-[46px] px-5 rounded-[20px] flex items-center bg-white">
               <Image
-                src="/icons/LockKey.svg"
+                src="/icons/LockKeyGray.svg"
                 width={20}
                 height={20}
                 alt="Password Icon"
-                className="mr-3 bg-caption"
+                className="mr-3"
               />
               <input
                 type="password"
@@ -72,11 +72,11 @@ export default function Signup() {
             {/* Confirm Password Input Text */}
             <div className="w-full h-[46px] px-5 rounded-[20px] flex items-center bg-white">
               <Image
-                src="/icons/LockKey.svg"
+                src="/icons/LockKeyGray.svg"
                 width={20}
                 height={20}
                 alt="Confirm Password Icon"
-                className="mr-3 bg-caption"
+                className="mr-3"
               />
               <input
                 type="password"

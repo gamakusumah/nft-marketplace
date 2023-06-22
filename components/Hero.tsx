@@ -1,4 +1,7 @@
 import HighlightedNFT from "./HighlightedNFT";
+import RocketLaunch from "@/public/icons/RocketLaunch.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -17,17 +20,26 @@ export default function Hero() {
       </div>
 
       {/* Hero's Image */}
-      <div className="md:row-span-2">
+      <Link href="/artist" className="md:row-span-2">
         <HighlightedNFT />
-      </div>
+      </Link>
 
       {/* CTA and Info */}
       <div>
         {/* CTA Button */}
-        <button className="btn-secondary-fill w-full md:w-[224px] my-10 md:my-5 lg:my-[30px]">
-          <span className="h-5 w-5 bg-white mr-3"></span>
+        <Link
+          href="/signup"
+          className="btn-secondary-fill w-full md:w-[224px] my-10 md:my-5 lg:my-[30px]"
+        >
+          <Image
+            src={RocketLaunch}
+            alt="Button Icon"
+            width={20}
+            height={20}
+            className="mr-3"
+          />
           Get Started
-        </button>
+        </Link>
 
         {/* Addition Info */}
         <div className="w-full grid grid-cols-3">

@@ -16,7 +16,7 @@ export default function Cover() {
       <div className="w-full h-[120px] absolute bottom-0">
         <div className="container w-full h-[120px] flex justify-center md:justify-normal">
           <Image
-            src="/images/avatar/avatar-14.svg"
+            src="/images/avatar/avatar-14.jpg"
             width={120}
             height={120}
             alt="Artist Photo"

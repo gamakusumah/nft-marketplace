@@ -29,7 +29,7 @@ export default function ArtistInfo() {
           id="button-follow"
         >
           <Image
-            src="/icons/Plus.svg"
+            src="/icons/PlusCTA.svg"
             width={20}
             height={20}
             alt="Button Icon"

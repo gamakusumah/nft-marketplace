@@ -16,7 +16,14 @@ export default function HighlightedNFT() {
           Space Walking
         </h5>
         <div className="flex items-center">
-          <div className="h-6 w-6 bg-slate-500 rounded-full mr-3"></div>
+          <div className="h-6 w-6 bg-slate-500 rounded-full mr-3 overflow-hidden">
+            <Image
+              src="/images/avatar/avatar-14.jpg"
+              width={24}
+              height={24}
+              alt="Artist Avatar"
+            />
+          </div>
           <span>Animakid</span>
         </div>
       </div>

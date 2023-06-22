@@ -6,7 +6,7 @@ export default function Marketplace() {
   return (
     <main>
       {/* Headline and subhead */}
-      <div className="container py-[30px]">
+      <div className="container py-[30px] lg:py-20">
         <div>
           <h1 className="text-xl font-semibold mb-[10px] md:text-2xl lg:text-3xl">
             Browse Categories

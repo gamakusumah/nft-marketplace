@@ -12,11 +12,11 @@ export default function MoreNFTsFromThisArtist() {
         <NFTCards bgColorCard="sec" />
       </div>
       <Link
-        href="/"
+        href="/artist"
         className="btn-secondary-outline w-full md:w-[267px] md:justify-self-end"
       >
         <Image
-          src="/icons/ArrowRight.svg"
+          src="/icons/ArrowRightCTA.svg"
           width={20}
           height={20}
           alt="Button Icon"

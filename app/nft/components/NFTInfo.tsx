@@ -23,7 +23,7 @@ export default function NFTInfo() {
         <h2 className="font-mono text-caption mb-[10px] lg:text-lg lg:font-semibold">
           Created by
         </h2>
-        <ArtistCardSmall name="Orbitian" imgSrc="/images/avatar/avatar-9.svg" />
+        <ArtistCardSmall name="Orbitian" imgSrc="/images/avatar/avatar-9.jpg" />
       </div>
 
       {/* Description */}
