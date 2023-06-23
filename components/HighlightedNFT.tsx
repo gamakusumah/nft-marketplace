@@ -18,7 +18,7 @@ export default function HighlightedNFT() {
         <div className="flex items-center">
           <div className="h-6 w-6 bg-slate-500 rounded-full mr-3 overflow-hidden">
             <Image
-              src="/images/avatar/avatar-14.jpg"
+              src="/images/avatar/Avatar-14.jpg"
               width={24}
               height={24}
               alt="Artist Avatar"
