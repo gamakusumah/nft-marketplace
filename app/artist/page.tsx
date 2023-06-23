@@ -20,7 +20,7 @@ export default function Artist() {
       price: 1.63,
       highestBid: 0.33,
       nftImgSrc: "/images/nft/1.jpg",
-      artistAvatarSrc: "/images/avatar/avatar-14.jpg",
+      artistAvatarSrc: "/images/avatar/avatar-21.jpg",
     },
     {
       name: "Life On Edena",
@@ -28,7 +28,7 @@ export default function Artist() {
       price: 1.63,
       highestBid: 0.33,
       nftImgSrc: "/images/nft/2.jpg",
-      artistAvatarSrc: "/images/avatar/avatar-14.jpg",
+      artistAvatarSrc: "/images/avatar/avatar-21.jpg",
     },
     {
       name: "AstroFiction",
@@ -36,7 +36,7 @@ export default function Artist() {
       price: 1.63,
       highestBid: 0.33,
       nftImgSrc: "/images/nft/3.jpg",
-      artistAvatarSrc: "/images/avatar/avatar-14.jpg",
+      artistAvatarSrc: "/images/avatar/avatar-21.jpg",
     },
     {
       name: "CryptoCity",
@@ -44,7 +44,7 @@ export default function Artist() {
       price: 1.63,
       highestBid: 0.33,
       nftImgSrc: "/images/nft/8.jpg",
-      artistAvatarSrc: "/images/avatar/avatar-14.jpg",
+      artistAvatarSrc: "/images/avatar/avatar-21.jpg",
     },
     {
       name: "ColorfulDog 0524",
@@ -52,7 +52,7 @@ export default function Artist() {
       price: 1.63,
       highestBid: 0.33,
       nftImgSrc: "/images/nft/10.jpg",
-      artistAvatarSrc: "/images/avatar/avatar-14.jpg",
+      artistAvatarSrc: "/images/avatar/avatar-21.jpg",
     },
     {
       name: "Space Tales",
@@ -60,7 +60,7 @@ export default function Artist() {
       price: 1.63,
       highestBid: 0.33,
       nftImgSrc: "/images/nft/12.jpg",
-      artistAvatarSrc: "/images/avatar/avatar-14.jpg",
+      artistAvatarSrc: "/images/avatar/avatar-21.jpg",
     },
     {
       name: "Cherry Blossom Girl 037",
@@ -68,7 +68,7 @@ export default function Artist() {
       price: 1.63,
       highestBid: 0.33,
       nftImgSrc: "/images/nft/15.jpg",
-      artistAvatarSrc: "/images/avatar/avatar-14.jpg",
+      artistAvatarSrc: "/images/avatar/avatar-21.jpg",
     },
     {
       name: "Dancing Robots 0987",
@@ -76,7 +76,7 @@ export default function Artist() {
       price: 1.63,
       highestBid: 0.33,
       nftImgSrc: "/images/nft/20.jpg",
-      artistAvatarSrc: "/images/avatar/avatar-14.jpg",
+      artistAvatarSrc: "/images/avatar/avatar-21.jpg",
     },
     {
       name: "IceCream Ape",
@@ -84,7 +84,7 @@ export default function Artist() {
       price: 1.63,
       highestBid: 0.33,
       nftImgSrc: "/images/nft/21.jpg",
-      artistAvatarSrc: "/images/avatar/avatar-14.jpg",
+      artistAvatarSrc: "/images/avatar/avatar-21.jpg",
     },
   ];
 
