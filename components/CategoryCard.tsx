@@ -8,7 +8,7 @@ interface CategoryProp {
 
 export default function CategoryCard(prop: CategoryProp) {
   return (
-    <div className="bg-sec rounded-[20px] overflow-hidden">
+    <div className="bg-sec h-full rounded-[20px] overflow-hidden">
       <div className="h-[142px] lg:h-60 w-full overflow-hidden relative">
         <Image
           src={prop.imgSrc}

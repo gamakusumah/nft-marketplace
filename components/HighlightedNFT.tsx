@@ -4,7 +4,7 @@ import HighlightedImg from "@/public/images/Highlight.jpg";
 export default function HighlightedNFT() {
   return (
     <div className="h-[315px] md:h-[330px] lg:h-[510px] w-[315px] md:w-[330px] lg:w-[510px] bg-sec rounded-[20px] my-10 md:my-0 overflow-hidden">
-      <div className="h-[206px] md:h-[221px] lg:h-[401px] w-full bg-blue-500">
+      <div className="h-[206px] md:h-[221px] lg:h-[401px] w-full">
         <Image
           src={HighlightedImg}
           alt="Highlighted NFT"
