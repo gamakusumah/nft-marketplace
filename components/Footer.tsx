@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Storefront from "@/public/images/Logo.png";
+import Storefront from "@/public/images/Storefront.png";
 
 export default function Footer() {
   return (
@@ -10,10 +10,14 @@ export default function Footer() {
           {/* Info */}
           <div>
             {/* Logo */}
-            <Link href="/">
-              <Image src={Storefront} alt="NFT Marketplace Logo" />
+            <Link href="/" className="flex items-center space-x-2">
+              <Image
+                src={Storefront}
+                alt="logo"
+                className="text-cta w-6 h-6 lg:w-8 lg:h-8"
+              />
+              <span className="font-mono font-bold">NFT Marketplace</span>
             </Link>
-
             {/* Additional Info */}
             <div className="text-caption mt-5">
               <p className="mb-5 lg:w-[238px]">
