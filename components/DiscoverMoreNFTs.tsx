@@ -7,7 +7,7 @@ import Link from "next/link";
 import SlideAnimaton from "./SlideAnimaton";
 import { motion } from "framer-motion";
 import FadeInAnimation from "./FadeInAnimation";
-import { container, item } from "@/app/animations";
+import { container, fadeIn, item } from "@/app/animations";
 
 export default function DiscoverMoreNFTs() {
   return (
@@ -67,11 +67,13 @@ export default function DiscoverMoreNFTs() {
       </motion.div>
 
       {/* Button */}
-      <FadeInAnimation>
-        <Link
-          href="/marketplace"
-          className="btn-secondary-outline w-full md:w-[247px] md:place-self-end"
-        >
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        className="w-full md:w-[247px] md:place-self-end"
+      >
+        <Link href="/marketplace" className="btn-secondary-outline">
           <Image
             src={RocketLaunchCTA}
             alt="Button Icon"
@@ -81,7 +83,7 @@ export default function DiscoverMoreNFTs() {
           />
           See All
         </Link>
-      </FadeInAnimation>
+      </motion.div>
     </section>
   );
 }
