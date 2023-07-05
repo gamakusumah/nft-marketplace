@@ -1,15 +1,22 @@
+"use client";
+
 import CollectionCard from "./CollectionCard";
+import SlideAnimaton from "./SlideAnimaton";
 
 export default function TrendingCollection() {
   return (
     <section className="container py-10 lg:py-20">
       <div>
-        <h2 className="font-sans font-semibold text-xl lg:text-2xl mb-[10px]">
-          Trending Collections
-        </h2>
-        <p className="font-sans lg:text-md">
-          Checkout our weekly updated trending collection.
-        </p>
+        <SlideAnimaton>
+          <h2 className="font-sans font-semibold text-xl lg:text-2xl mb-[10px]">
+            Trending Collections
+          </h2>
+        </SlideAnimaton>
+        <SlideAnimaton>
+          <p className="font-sans lg:text-md">
+            Checkout our weekly updated trending collection.
+          </p>
+        </SlideAnimaton>
       </div>
 
       {/* Collections*/}

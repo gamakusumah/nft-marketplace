@@ -1,7 +1,11 @@
+"use client";
 import HighlightedNFT from "./HighlightedNFT";
 import RocketLaunch from "@/public/icons/RocketLaunch.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import SlideAnimaton from "./SlideAnimaton";
+import { fadeIn } from "@/app/animations";
 
 export default function Hero() {
   return (
@@ -9,13 +13,19 @@ export default function Hero() {
       <div className="justify-self-start">
         {/* Headline and Description */}
         <div>
-          <h1 className="font-sans font-semibold text-xl md:text-2xl lg:text-4xl mb-[10px] md:mb-5">
-            Discover digital art & Collect NFTs
-          </h1>
-          <p className="font-sans lg:text-md">
-            NFT marketplace UI created with Anima for Figma. Collect, buy and
-            sell art from more than 20k NFT artists.
-          </p>
+          <div className="overflow-hidden">
+            <SlideAnimaton>
+              <h1 className="font-sans font-semibold text-xl md:text-2xl lg:text-4xl mb-[10px] md:mb-5">
+                Discover digital art & Collect NFTs
+              </h1>
+            </SlideAnimaton>
+          </div>
+          <SlideAnimaton>
+            <p className="font-sans overflow-hidden lg:text-md">
+              NFT marketplace UI created with Anima for Figma. Collect, buy and
+              sell art from more than 20k NFT artists.
+            </p>
+          </SlideAnimaton>
         </div>
       </div>
 
@@ -26,37 +36,47 @@ export default function Hero() {
 
       {/* CTA and Info */}
       <div>
-        {/* CTA Button */}
-        <Link
-          href="/signup"
-          className="btn-secondary-fill w-full md:w-[224px] my-10 md:my-5 lg:my-[30px]"
-        >
-          <Image
-            src={RocketLaunch}
-            alt="Button Icon"
-            width={20}
-            height={20}
-            className="mr-3"
-          />
-          Get Started
-        </Link>
+        <motion.div variants={fadeIn} initial="hidden" whileInView="visible">
+          {/* CTA Button */}
+          <Link
+            href="/signup"
+            className="btn-secondary-fill w-full md:w-[224px] my-10 md:my-5 lg:my-[30px]"
+          >
+            <Image
+              src={RocketLaunch}
+              alt="Button Icon"
+              width={20}
+              height={20}
+              className="mr-3"
+            />
+            Get Started
+          </Link>
+        </motion.div>
 
         {/* Addition Info */}
         <div className="w-full grid grid-cols-3">
-          <div>
-            <h5 className="font-mono font-bold text-lg lg:text-xl">240k+</h5>
-            <span className="lg:text-md lg:text-[24px]">Total Sale</span>
-          </div>
-          <div className="justify-self-center">
+          <SlideAnimaton>
             <div>
-              <h5 className="font-mono font-bold text-lg lg:text-xl">100k+</h5>
-              <span className="lg:text-md lg:text-[24px]">Auctions</span>
+              <h5 className="font-mono font-bold text-lg lg:text-xl">240k+</h5>
+              <span className="lg:text-md lg:text-[24px]">Total Sale</span>
             </div>
-          </div>
-          <div className="justify-self-end">
-            <h5 className="font-mono font-bold text-lg lg:text-xl">240k+</h5>
-            <span className="lg:text-md lg:text-[24px]">Artist</span>
-          </div>
+          </SlideAnimaton>
+          <SlideAnimaton>
+            <div className="justify-self-center">
+              <div>
+                <h5 className="font-mono font-bold text-lg lg:text-xl">
+                  100k+
+                </h5>
+                <span className="lg:text-md lg:text-[24px]">Auctions</span>
+              </div>
+            </div>
+          </SlideAnimaton>
+          <SlideAnimaton>
+            <div className="justify-self-end">
+              <h5 className="font-mono font-bold text-lg lg:text-xl">240k+</h5>
+              <span className="lg:text-md lg:text-[24px]">Artist</span>
+            </div>
+          </SlideAnimaton>
         </div>
       </div>
     </section>

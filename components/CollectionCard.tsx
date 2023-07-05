@@ -9,14 +9,24 @@ interface CardProp {
   imgTrdSrc: string;
   otherCollections: number;
 }
+import { motion } from "framer-motion";
+import { container, item } from "@/app/animations";
 
 export default function CollectionCard(prop: CardProp) {
   return (
-    <div className="h-[505px] md:h-[525px] w-full flex flex-col justify-between">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView="visible"
+      className="h-[505px] md:h-[525px] w-full flex flex-col justify-between"
+    >
       {/* Photos */}
       <div className="h-[425px] w-full grid gap-[15px]">
-        <Link href="/nft">
-          <div className="h-[315px] md:h-[330px] w-full bg-orange-500 rounded-[20px] overflow-hidden">
+        <Link href="/nft" className="transition-cust">
+          <motion.div
+            variants={item}
+            className="h-[315px] md:h-[330px] w-full rounded-[20px] overflow-hidden"
+          >
             <Image
               src={prop.imgMainSrc}
               width={330}
@@ -24,11 +34,14 @@ export default function CollectionCard(prop: CardProp) {
               className="object-cover w-full h-full"
               alt="NFT Photo"
             />
-          </div>
+          </motion.div>
         </Link>
         <div className="h-[95px] md:h-[100px] w-full grid grid-cols-3 items-stretch gap-[15px]">
-          <Link href="/nft">
-            <div className=" rounded-[20px] overflow-hidden">
+          <Link href="/nft" className="transition-cust">
+            <motion.div
+              variants={item}
+              className=" rounded-[20px] overflow-hidden"
+            >
               <Image
                 src={prop.imgScdSrc}
                 width={330}
@@ -36,10 +49,13 @@ export default function CollectionCard(prop: CardProp) {
                 className="object-cover w-full h-full"
                 alt="NFT Photo"
               />
-            </div>
+            </motion.div>
           </Link>
-          <Link href="/nft">
-            <div className=" rounded-[20px] overflow-hidden">
+          <Link href="/nft" className="transition-cust">
+            <motion.div
+              variants={item}
+              className=" rounded-[20px] overflow-hidden"
+            >
               <Image
                 src={prop.imgTrdSrc}
                 width={330}
@@ -47,14 +63,16 @@ export default function CollectionCard(prop: CardProp) {
                 className="object-cover w-full h-full"
                 alt="NFT Photo"
               />
-            </div>
+            </motion.div>
           </Link>
-          <Link
-            href="/nft"
-            className=" rounded-[20px] bg-cta font-mono text-lg font-bold flex items-center justify-center"
-          >
-            {prop.otherCollections}+
-          </Link>
+          <motion.div variants={item}>
+            <Link
+              href="/nft"
+              className="w-full h-full rounded-[20px] bg-cta font-mono text-lg font-bold flex items-center justify-center transition-cust"
+            >
+              {prop.otherCollections}+
+            </Link>
+          </motion.div>
         </div>
       </div>
 
@@ -78,6 +96,6 @@ export default function CollectionCard(prop: CardProp) {
           <span>{prop.artistName}</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

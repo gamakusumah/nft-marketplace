@@ -15,7 +15,7 @@ export default function NFTCard(proto: NFTProto) {
   return (
     <Link href="/nft">
       <div
-        className={`h-[402px] md:h-[469px] w-full max-w-[330px] rounded-[20px] overflow-hidden bg-${proto.bgColor}`}
+        className={`h-[402px] md:h-[469px] w-full max-w-[330px] rounded-[20px] overflow-hidden bg-${proto.bgColor} transition-cust`}
       >
         <div className="h-[238px] md:h-[296px] w-full">
           <Image

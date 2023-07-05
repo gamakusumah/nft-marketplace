@@ -87,16 +87,16 @@ export default function NFTInfo() {
           Tags
         </h2>
         <div className="flex flex-col items-baseline space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
-          <button className="uppercase font-semibold px-[30px] py-3 bg-sec rounded-[20px]">
+          <button className="uppercase font-semibold px-[30px] py-3 bg-sec rounded-[20px] transition-cust">
             ANIMATION
           </button>
-          <button className="uppercase font-semibold px-[30px] py-3 bg-sec rounded-[20px]">
+          <button className="uppercase font-semibold px-[30px] py-3 bg-sec rounded-[20px] transition-cust">
             illustration
           </button>
-          <button className="uppercase font-semibold px-[30px] py-3 bg-sec rounded-[20px]">
+          <button className="uppercase font-semibold px-[30px] py-3 bg-sec rounded-[20px] transition-cust">
             moon
           </button>
-          <button className="uppercase font-semibold px-[30px] py-3 bg-sec rounded-[20px]">
+          <button className="uppercase font-semibold px-[30px] py-3 bg-sec rounded-[20px] transition-cust">
             space
           </button>
         </div>

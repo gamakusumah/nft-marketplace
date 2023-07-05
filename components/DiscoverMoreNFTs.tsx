@@ -1,22 +1,37 @@
+"use client";
+
 import NFTCard from "./NFTCard";
 import Image from "next/image";
 import RocketLaunchCTA from "@/public/icons/RocketLaunchCTA.svg";
 import Link from "next/link";
+import SlideAnimaton from "./SlideAnimaton";
+import { motion } from "framer-motion";
+import FadeInAnimation from "./FadeInAnimation";
+import { container, item } from "@/app/animations";
 
 export default function DiscoverMoreNFTs() {
   return (
     <section className="container py-10 md:pb-20 lg:mt-20 grid md:grid-cols-2">
       {/* Headline */}
       <div>
-        <h2 className="font-sans font-semibold text-xl lg:text-2xl mb-[10px]">
-          Discover more NFTs
-        </h2>
-        <p className="font-sans lg:text-md">Explore new trending NFTs</p>
+        <SlideAnimaton>
+          <h2 className="font-sans font-semibold text-xl lg:text-2xl mb-[10px]">
+            Discover more NFTs
+          </h2>
+        </SlideAnimaton>
+        <SlideAnimaton>
+          <p className="font-sans lg:text-md">Explore new trending NFTs</p>
+        </SlideAnimaton>
       </div>
 
       {/*NFTs Cards */}
-      <div className="h-[1246px] md:h-[469px] overflow-hidden my-10 md:mb-0 md:order-3 md:col-span-2 grid gap-5 md:grid-cols-2 lg:grid-cols-3 md:gap-[30px]">
-        <Link href="/nft">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        className="h-[1246px] md:h-[469px] overflow-hidden my-10 md:mb-0 md:order-3 md:col-span-2 grid gap-5 md:grid-cols-2 lg:grid-cols-3 md:gap-[30px]"
+      >
+        <motion.div variants={item}>
           <NFTCard
             name="Distance Galaxy"
             artist="MoonDancer"
@@ -26,8 +41,8 @@ export default function DiscoverMoreNFTs() {
             bgColor="sec"
             avatarArtist="/images/avatar/avatar-16.jpg"
           />
-        </Link>
-        <Link href="/nft">
+        </motion.div>
+        <motion.div variants={item}>
           <NFTCard
             name="Life On Edene"
             artist="NebulaKid"
@@ -37,8 +52,8 @@ export default function DiscoverMoreNFTs() {
             bgColor="sec"
             avatarArtist="/images/avatar/avatar-10.jpg"
           />
-        </Link>
-        <Link href="/nft">
+        </motion.div>
+        <motion.div variants={item}>
           <NFTCard
             name="AstroFiction"
             artist="Spaceone"
@@ -48,23 +63,25 @@ export default function DiscoverMoreNFTs() {
             bgColor="sec"
             avatarArtist="/images/avatar/avatar-15.jpg"
           />
-        </Link>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Button */}
-      <Link
-        href="/marketplace"
-        className="btn-secondary-outline w-full md:w-[247px] md:place-self-end"
-      >
-        <Image
-          src={RocketLaunchCTA}
-          alt="Button Icon"
-          width={20}
-          height={20}
-          className="mr-3"
-        />
-        See All
-      </Link>
+      <FadeInAnimation>
+        <Link
+          href="/marketplace"
+          className="btn-secondary-outline w-full md:w-[247px] md:place-self-end"
+        >
+          <Image
+            src={RocketLaunchCTA}
+            alt="Button Icon"
+            width={20}
+            height={20}
+            className="mr-3"
+          />
+          See All
+        </Link>
+      </FadeInAnimation>
     </section>
   );
 }

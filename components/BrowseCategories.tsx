@@ -1,5 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import CategoryCard from "./CategoryCard";
+import SlideAnimaton from "./SlideAnimaton";
+import { motion } from "framer-motion";
+import { container, item } from "@/app/animations";
 
 export default function BrowseCategories() {
   interface Category {
@@ -53,22 +58,31 @@ export default function BrowseCategories() {
   return (
     <section className="container py-10 lg:py-20">
       {/* Headline */}
-      <h2 className="font-sans font-semibold text-xl lg:text-2xl mb-[10px]">
-        Browse Categories
-      </h2>
+      <SlideAnimaton>
+        <h2 className="font-sans font-semibold text-xl lg:text-2xl mb-[10px]">
+          Browse Categories
+        </h2>
+      </SlideAnimaton>
 
       {/* Category Cards */}
-      <div className="h-[918px] md:h-[470px] lg:h-[662px] w-full mt-10 lg:mt-[60px] grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-[30px] content-stretch">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        className="h-[918px] md:h-[470px] lg:h-[662px] w-full mt-10 lg:mt-[60px] grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-[30px] content-stretch"
+      >
         {categories.map((category, i) => (
-          <Link href="/marketplace">
-            <CategoryCard
-              name={category.name}
-              imgSrc={category.imgSrc}
-              iconSrc={category.iconSrc}
-            />
-          </Link>
+          <motion.div variants={item}>
+            <Link href="/marketplace">
+              <CategoryCard
+                name={category.name}
+                imgSrc={category.imgSrc}
+                iconSrc={category.iconSrc}
+              />
+            </Link>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

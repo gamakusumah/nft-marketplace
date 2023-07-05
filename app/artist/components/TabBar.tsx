@@ -4,7 +4,7 @@ export default function TabBar() {
       <div className="h-[60px] grid grid-cols-3 text-caption font-semibold w-full">
         <button className="cursor-pointer hover:bg-sec lg:text-lg group text-white border-b-2 border-caption">
           Created
-          <span className="font-mono bg-caption rounded-[20px] px-[10px] py-[5px] ml-4 hidden md:inline-block group-hover:bg-prim">
+          <span className="font-mono bg-caption rounded-[20px] px-[10px] py-[5px] ml-4 hidden md:inline-block">
             302
           </span>
         </button>
