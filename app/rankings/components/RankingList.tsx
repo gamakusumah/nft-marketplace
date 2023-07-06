@@ -1,4 +1,8 @@
+"use client";
+
+import { container } from "@/app/animations";
 import TableItem from "./TableItem";
+import { motion } from "framer-motion";
 
 export default function RankingList() {
   interface Artist {
@@ -91,7 +95,12 @@ export default function RankingList() {
       </div>
 
       {/* Cards Rankings */}
-      <div className="grid gap-5">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        className="grid gap-5"
+      >
         {artists.map((artist, i) => (
           <TableItem
             index={i + 1}
@@ -99,7 +108,7 @@ export default function RankingList() {
             avatarImgSrc={artist.imgSrc}
           />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

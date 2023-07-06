@@ -1,4 +1,9 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { item } from "@/app/animations";
+import Link from "next/link";
 
 interface ItemProp {
   index: number;
@@ -8,8 +13,11 @@ interface ItemProp {
 
 export default function TableItem(prop: ItemProp) {
   return (
-    <div className="w-full h-[50px] md:h-[60px] lg:h-[84px] px-[10px] md:px-5 flex items-center justify-between bg-sec rounded-[20px]">
-      <div className="flex items-center">
+    <motion.div
+      variants={item}
+      className="w-full h-[50px] md:h-[60px] lg:h-[84px] px-[10px] md:px-5 flex items-center justify-between bg-sec rounded-[20px]"
+    >
+      <Link href="/artist" className="flex items-center">
         <span className="font-mono text-caption text-sm mr-[10px] md:text-base md:mr-5 w-[30px] h-[30px] lg:rounded-[20px] lg:bg-prim flex items-center justify-center">
           {prop.index}
         </span>
@@ -25,7 +33,7 @@ export default function TableItem(prop: ItemProp) {
             {prop.artistName}
           </h5>
         </div>
-      </div>
+      </Link>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 md:w-[220px] lg:w-[520px]">
         <p className="uppercase font-mono text-sm md:text-base text-[#00AC4F] hidden md:inline-block">
           +1.41%
@@ -37,6 +45,6 @@ export default function TableItem(prop: ItemProp) {
           12.4 ETH
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -46,7 +46,7 @@ export default function Navbar() {
         </motion.button>
         <nav
           className={`bg-prim h-screen absolute right-0 top-0 p-5 z-40 lg:static lg:block lg:w-full lg:h-auto lg:p-0 transition-all ease-in-out duration-700 ${
-            navbar ? " w-[70%] md:w-1/3" : "w-0 opacity-0 lg:opacity-100"
+            navbar ? null : "hidden"
           }`}
         >
           {/* Menu List */}

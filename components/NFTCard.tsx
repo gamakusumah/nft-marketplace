@@ -1,3 +1,7 @@
+"use client";
+
+import { item } from "@/app/animations";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,8 +18,10 @@ interface NFTProto {
 export default function NFTCard(proto: NFTProto) {
   return (
     <Link href="/nft">
-      <div
-        className={`h-[402px] md:h-[469px] w-full max-w-[330px] rounded-[20px] overflow-hidden bg-${proto.bgColor} transition-cust`}
+      <motion.div
+        variants={item}
+        whileHover={{ scale: 0.95 }}
+        className={`h-[402px] md:h-[469px] w-full max-w-[330px] rounded-[20px] overflow-hidden bg-${proto.bgColor}`}
       >
         <div className="h-[238px] md:h-[296px] w-full">
           <Image
@@ -53,7 +59,7 @@ export default function NFTCard(proto: NFTProto) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Link>
   );
 }
